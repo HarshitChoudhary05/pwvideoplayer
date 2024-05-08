@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <link rel='stylesheet' href='https://cdn.plyr.io/3.6.8/plyr.css'>
-  <link rel="stylesheet" href="./style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://cdn.plyr.io/static/icons/favicon.ico" />
-  <link rel="icon" type="image/png" href="https://cdn.plyr.io/static/icons/32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="https://cdn.plyr.io/static/icons/16x16.png" sizes="16x16" />
-  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.plyr.io/static/icons/180x180.png" />
-  <title>Video Player</title>
-  <meta name="title" content="Plyr.io demo | player.io examples | Plyr.io hls demo | Plyr.io custom controls">
-  <meta name="description" content="Plyr.io demo | player.io examples | Plyr.io hls demo | Plyr.io custom controls">
+  <link rel='stylesheet' href='https://cdn.plyr.io/3.6.8/plyr.css'><link rel="stylesheet" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="icon" href="https://cdn.plyr.io/static/icons/favicon.ico" />
+<link rel="icon" type="image/png" href="https://cdn.plyr.io/static/icons/32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://cdn.plyr.io/static/icons/16x16.png" sizes="16x16" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.plyr.io/static/icons/180x180.png" />
+
+
+<title>Video Player</title>
+<meta name="title" content="Plyr.io demo | player.io examples | Plyr.io hls demo | Plyr.io custom controls">
+<meta name="description" content="Plyr.io demo | player.io examples | Plyr.io hls demo | Plyr.io custom controls">
+
+
 </head>
 <body>
-  <div class="container">
-    <input type="text" id="videoURL" placeholder="Enter video URL">
-    <button onclick="playVideo()">Play</button>
-    <video id="dashplayer" controls crossorigin playsinline data-poster="/path/to/poster.jpg">
-      <source type="application/x-mpegURL" src="">
-    </video>
-  </div>
+<div class="container">
+
+<video id="dashplayer" controls crossorigin playsinline data-poster="/path/to/poster.jpg">
+<source 
+type="application/x-mpegURL" 
+src="https://psitoffers.store/master.php?vid=d2a5d372-0f70-4f69-9e1f-e5202055570c"
+>
+</video>
+</div>
   <script src='https://cdn.plyr.io/3.6.8/plyr.js'></script>
+  <script  src="./htmlvideoscript.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
-  <script src="./htmlvideoscript.js"></script>
-  <script src="./hlsautoqualityscript.js"></script>
-  <script>
-    function playVideo() {
-      var videoURL = document.getElementById('videoURL').value;
-      var videoSource = document.querySelector('#dashplayer source');
-      videoSource.setAttribute('src', videoURL);
-      document.getElementById('dashplayer').load();
-      document.getElementById('dashplayer').play();
-    }
-  </script>
-</body>
-</html>
+  <script  src="./hlsautoqualityscript.js"></script>
